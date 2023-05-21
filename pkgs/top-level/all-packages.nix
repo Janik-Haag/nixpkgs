@@ -13349,6 +13349,8 @@ with pkgs;
 
   upbound = callPackage ../development/tools/upbound { };
 
+  upf = callPackage ../servers/upf { };
+
   upterm = callPackage ../tools/misc/upterm { };
 
   upx = callPackage ../tools/compression/upx { };
