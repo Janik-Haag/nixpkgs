@@ -22,11 +22,8 @@ in
       jdkPackage = mkOption {
         type = types.package;
         default = pkgs.openjdk8;
-        defaultText = literalExample "pkgs.openjdk8";
-        example = literalExample "pkgs.openjdk8";
-        description = ''
-          The JDK package to use.
-        '';
+        defaultText = literalExpression "pkgs.openjdk8";
+        description = lib.mdDoc "The JDK package to use.";
       };
 
       user = mkOption {
